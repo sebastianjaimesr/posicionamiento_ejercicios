@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maquetado con posicionamiento flotante</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            background-color: wheat;
+            height: 100vh;
+            height: 100vh;
+        }
+
+        .seccion-1{
+            background-color: #9e6b4a;
+            color: white;
+            width: 100%;
+            height: 40%;
+        }
+
+        .seccion-2{
+            background-color: red;
+            width: 100%;
+            height: 20%;
+            float: left;
+        }
+
+        .seccion-3{
+            width: 155px;
+            height: 155px;
+            background-color: gray;
+            color: black;
+            font-size: 17px;
+            text-align: left;
+            border: 3px solid white;
+            
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 10;
+
+            display:flex;
+            align-items: center;
+            padding: 5px;
+        }
+
+        .seccion-4{
+            background-color: yellow;
+            width: 100%;
+            height: 30%;
+            float: left;
+            text-align: center;
+            padding: 1rem;
+        }
+        .seccion-5{
+            background-color: blue;
+            width: 100%;
+            height: 10%;
+            float: left;
+            text-align: center;
+            color: black;
+        }
+        h2 {
+            color: aliceblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="seccion-1"></div>
+    <div class="seccion-2"></div>
+    <div class="seccion-3"><p>A esta parte la de color oscuro(la etiqueta div) debe ser separada a150px x 50px</p></div>
+    <div class="seccion-4">
+        <h1>Nombre de la persona</h1>
+        <p>En esta seccion se pondra el texto  que describe a la persona que hara la biografia</p></div>
+    <div class="seccion-5">
+        <p>Esta se usara para establecer el nombre de la persona que desarrollo la plantila</p>
+        <h2>plantilla realizada por: Noe Zavala - 666 - 0148745</h2></div>
+</body>
+</html>
